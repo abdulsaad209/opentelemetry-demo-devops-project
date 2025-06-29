@@ -846,8 +846,8 @@ services:
       - "9200"
     healthcheck:
       test: curl -s http://localhost:9200/_cluster/health | grep -E '"status":"(green|yellow)"'
-      start_period: 40s
+      start_period: 70s
       interval: 5s
-      timeout: 40s
+      timeout: 70s
       retries: 10
     logging: *logging
